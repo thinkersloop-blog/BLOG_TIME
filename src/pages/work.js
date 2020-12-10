@@ -135,36 +135,38 @@ export const pageQuery = graphql`
         }
       }
     }
-    githubData {
-      data {
-        viewer {
-          repositories {
-            nodes {
-              name
-              description
-              homepageUrl
-              resourcePath
-              updatedAt(formatString: "YYYY-MM-DD")
-              languages {
-                edges {
-                  node {
-                    name
-                    color
-                  }
-                }
-              }
-              licenseInfo {
-                name
-              }
-              stargazers {
-                totalCount
-              }
-            }
-          }
-        }
-      }
-    }
+    
   }
 `
+// githubData {
+//   data {
+//     viewer {
+//       repositories {
+//         nodes {
+//           name
+//           description
+//           homepageUrl
+//           resourcePath
+//           updatedAt(formatString: "YYYY-MM-DD")
+//           languages {
+//             edges {
+//               node {
+//                 name
+//                 color
+//               }
+//             }
+//           }
+//           licenseInfo {
+//             name
+//           }
+//           stargazers {
+//             totalCount
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
 
 export default WorksPage
